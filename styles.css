@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'Heal the Web';
-    src: url('./fonts/HealTheWeb.woff2') format('woff2'),
-         url('./fonts/HealTheWeb.woff') format('woff');
+    src: url('./font/HealTheWeb.woff2') format('woff2'),
+         url('./font/HealTheWeb.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
