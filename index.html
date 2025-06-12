@@ -5,17 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="styles.css" rel="stylesheet"/>
 <title>Clément Delage</title>
+<style>
+nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background: rgba(255,255,255,0.18);
+  color: #3498db;
+}
+.cv-btn {
+  background: #3498db;
+  color: #fff !important;
+  font-weight: bold;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.cv-btn:hover,
+.cv-btn:focus {
+  background: #217dbb;
+  color: #fff !important;
+}
+</style>
 </head>
 <body>
 <header>
-  <h1>Clément DELAGE</h1>
-  <p>Étudiant en BUT Informatique - IUT de Lannion</p>
+  <h1>Clément Delage</h1>
+  <nav>
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="cv_clement_delage.pdf" class="nav-link cv-btn" download>Télécharger mon CV</a>
+  </nav>
 </header>
 <main>
   <section id="about">
     <h2>À propos de moi</h2>
     <p>Je suis actuellement étudiant en Bachelor Universitaire de Technologie Informatique à l'IUT de Lannion. Passionné par le développement logiciel, les nouvelles technologies et la résolution de problèmes complexes, je cherche à acquérir de l'expérience professionnelle tout en développant mes compétences techniques.</p>
-    <a href="cv.pdf" class="btn" download>Télécharger mon CV</a>
   </section>
   <section id="education">
     <h2>Formation</h2>
@@ -75,6 +112,15 @@
           <span class="project-skill">HTML, CSS, Python (Flask), SQLite3</span>
         </div>
       </a>
+      <div class="project-card">
+        <h3>Scraping Météo France</h3>
+        <p>Script Python qui récupère automatiquement les prévisions météorologiques de ma ville sur le site de Météo France. Les données sont sauvegardées dans un fichier CSV pour suivre l'évolution des prévisions au fil du temps.</p>
+        <div class="project-skills">
+          <span class="project-skill">Python (Requests, BeautifulSoup)</span>
+          <span class="project-skill">Manipulation de données CSV</span>
+          <span class="project-skill">Automatisation simple</span>
+        </div>
+      </div>
     </div>
   </section>
   <section id="contact">
